@@ -1,0 +1,14 @@
+{
+  "name": "vale",
+  "version": "1.0.0",
+  "description": "Invitacio de los quince de vale",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "damichingona",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
