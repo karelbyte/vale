@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MIS QUINCE</title>
     <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-/>
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="owl.carousel.min.css" />
+    <link rel="stylesheet" href="owl.theme.default.min.css" />
+
     <link rel="stylesheet" type="text/css" href="estilo.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,33 +49,84 @@
       href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Courgette&family=Emilys+Candy&family=Festive&family=Fleur+De+Leah&family=Heebo:wght@100&family=Lovers+Quarrel&family=Mr+De+Haviland&family=Raleway:wght@100&family=Roboto+Slab:wght@100&family=Send+Flowers&family=WindSong&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/a97faa0bd3.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a97faa0bd3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body onload="loadMyScript()">
     <img class="imagen" src="./images/nuevo_top1.png" alt="" />
-
+    <svg
+     id="btn-audio"
+      class="audio"
+      xmlns="http://www.w3.org/2000/svg"
+      x="0px"
+      y="0px"
+      width="48"
+      height="48"
+      viewBox="0 0 226 226"
+      style="fill: #000000"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+        stroke="none"
+        stroke-width="1"
+        stroke-linecap="butt"
+        stroke-linejoin="miter"
+        stroke-miterlimit="10"
+        stroke-dasharray=""
+        stroke-dashoffset="0"
+        font-family="none"
+        font-weight="none"
+        font-size="none"
+        text-anchor="none"
+        style="mix-blend-mode: normal"
+      >
+        <path d="M0,226v-226h226v226z" fill="none"></path>
+        <path
+          d="M113,226c-62.40818,0 -113,-50.59182 -113,-113v0c0,-62.40818 50.59182,-113 113,-113v0c62.40818,0 113,50.59182 113,113v0c0,62.40818 -50.59182,113 -113,113z"
+          fill="#cccccc"
+        ></path>
+        <g fill="#e91e63">
+          <path
+            d="M94.6375,113c-18.72245,0 -33.9,15.17755 -33.9,33.9c0,18.72245 15.17755,33.9 33.9,33.9c18.72245,0 33.9,-15.17755 33.9,-33.9c0,-18.72245 -15.17755,-33.9 -33.9,-33.9z"
+          ></path>
+          <path
+            d="M113.47083,45.2v101.7h15.06667v-71.56667l41.43333,11.3v-26.36667z"
+          ></path>
+        </g>
+      </g>
+    </svg>
     <div class="contenedor">
       <div class="hijo">
         <a class="lista1" href="#separador2">Ubicacion</a>
-        <a class="lista3" href="detalles.html">Galeria</a>
+        <a class="lista3" href="#details">Galeria</a>
       </div>
 
       <div class="nombres">
         <h1 class="quince">Mis XV años</h1>
         <h1 class="nombre">Valeria</h1>
-        <h3>
-          Con la bendicion de Dios, y el amor que mis padres me han dado,
-          me siento felíz de llegar a este momento de mi vida,
-          el día que dejaré atrás mi infancia y comenzaré un nuevo viaje.
-        </h3>
+        <p>
+          Con la bendicion de Dios, y el amor que mis padres me han dado, me
+          siento felíz de llegar a este momento de mi vida. 
+        </p>
+        <h3>Mis padres</h3>
+        <h3>Raul Sotelo y Alejandra Garcia</h3>
+        <h3>Y Mis Padrinos</h3>
+        <h3>Lucio A. de los Santos y Daniela Sotelo</h3>
+        <p>Los invitan cordialmente a celebrar este día que dejaré
+          atrás mi infancia y comenzaré un nuevo viaje.</p>
       </div>
     </div>
- <img class="imgsep" src="./images/separador1.png" />
+    <img class="imgsep" src="./images/separador1.png" />
     <div class="squedule">
       <div class="fecha">
-        <span class="numero" style="font-size: 45px; font-weight: bold">21</span>
-        <span>MAYO <br />2022</span >
+        <span class="numero" style="font-size: 45px; font-weight: bold"
+          >21</span
+        >
+        <span>MAYO <br />2022</span>
       </div>
       <div class="hora">
         <span>19:00</span>
@@ -83,27 +137,22 @@
       </div>
     </div>
 
-   
- 
-    <audio src="malagueña.mp3" autoplay="true" loop="loop">...</audio>
-
-    
+    <audio id="aud" loop="true" src="./images/vals_mariposas.mp3"></audio>
 
     <div id="separador2">
       <h2>UBICACION</h2>
     </div>
 
     <div id="map">
-  
-     <h3 >Misa: Parroquia del Espiritu Santo</h3>
-     <h3>05:00PM</h3>
-     <form>
-      <a target="_blank" href="https://goo.gl/maps/36xPH2TeS6jkqaZM9">
-        <input id="mapa" type="button" value="IR AL MAPA" />
-      </a>
-    </form>
-    <h3>Fiesta: Salon de fiestas La langosta</h3>
-    <h3>07:00PM</h3>
+      <h3>Misa: Parroquia del Espiritu Santo</h3>
+      <h3>05:00PM</h3>
+      <form>
+        <a target="_blank" href="https://goo.gl/maps/36xPH2TeS6jkqaZM9">
+          <input id="mapa" type="button" value="IR AL MAPA" />
+        </a>
+      </form>
+      <h3>Fiesta: Salon de fiestas La langosta</h3>
+      <h3>07:00PM</h3>
       <form>
         <a target="_blank" href="https://goo.gl/maps/SGMQre3Wox4f2cg19">
           <input id="mapa" type="button" value="IR AL MAPA" />
@@ -120,29 +169,61 @@
         </div>
       </div>
     </div>
-    <div class="details">
+    <img class="imgsep" src="./images/separador3.png" alt="" />
+    <form class="confirmacion" method="post" action="/confirmacion">
+      <h1>Confirmar Asistencia</h1>
+      <input
+        placeholder="Nombre y Apellidos"
+        class="confirm"
+        type="text"
+        name="nombre"
+      />
+      <button class="sendconfirm" type="submit">Enviar</button>
+    </form>
+    <div class="details" id="details">
       <h2>GALERIA</h2>
     </div>
     <div class="galery">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./images/Vale1.png" alt=""></div>
-        <div class="swiper-slide"><img src="./images/valepadrinos.png" alt=""></div>
-        <div class="swiper-slide"><img src="./images/vale (13).png" alt=""></div>
-        <div class="swiper-slide"><img src="./images/vale y papas1.png" alt=""></div>
-        <div class="swiper-slide"><img src="./images/vale (8).png" alt=""></div>
-        <div class="swiper-slide"><img src="./images/vale (9).png" alt=""></div>
-        <div class="swiper-slide"><img src="./images/vale(12).png" alt=""></div>
-        <div class="swiper-slide"><img src="./images/vale(11).png" alt=""></div>
+      <div class="owl-carousel owl-theme">
+        <div class="item item-border">
+          <img src="./images/Vale1.png" alt="" />
+        </div>
+        <div class="item item-border">
+          <img src="./images/vale_abuelospng.png" alt="" />
+        </div>
+        <div class="item item-border">
+          <img src="./images/valepadrinos.png" alt="" />
+        </div>
+        <div class="item item-border">
+          <img src="./images/vale (13).png" alt="" />
+        </div>
+        <div class="item item-border">
+          <img src="./images/vale y papas1.png" alt="" />
+        </div>
+        <div class="item item-border">
+          <img src="./images/vale (8).png" alt="" />
+        </div>
+        <div class="item item-border">
+          <img src="./images/vale (9).png" alt="" />
+        </div>
+        <div class="item item-border">
+          <img src="./images/vale(5).png" alt="" />
+        </div>
+        <div class="item item-border">
+          <img src="./images/vale(12).png" alt="" />
+        </div>
+        <div class="item item-border">
+          <img src="./images/vale(11).png" alt="" />
+        </div>
       </div>
-      <div class="swiper-pagination"></div>
     </div>
-  </div>
-  
 
     <img class="imagen" src="./images/bottom1.png" alt="" />
     <p></p>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
