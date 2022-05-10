@@ -16,8 +16,52 @@ body {
   background: rgba(0, 0, 0, 0.8);
   border-radius: 50%;
   border: 1px solid #1d9af2;
+  z-index: 1000;
 }
 
+.animate__animated.animate__bounce {
+  --animate-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 
 .item-border {
   padding: 10px;
@@ -300,6 +344,24 @@ h3 {
 h1 {
   font-family: "Send Flowers", cursive;
   color: #a5ceb6;
+}
+
+.corona{
+display: flex;
+
+text-align: center;
+justify-content: center;
+
+}
+.corona1{
+width: 100px;
+height: 100px;
+}
+.regalo{
+  font-size: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: normal;
+  color: #464e4a;
 }
 
 @media screen and (min-width: 700px) {
