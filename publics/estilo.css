@@ -10,7 +10,7 @@ body {
 
 .audio {
   position: fixed;
-  top: 90vh;
+  top: 80vh;
   right: 10px;
   cursor: pointer;
   background: rgba(0, 0, 0, 0.8);
@@ -98,19 +98,20 @@ p{
   font-family: "Trebuchet MS";
   font-size: 20px; 
   color: #206638;
-  text-align: center
+  text-align: center;
+  margin: 8px;
 }
 
 .lista1 {
   text-align: center;
-  color: rgb(201, 97, 97);
+  color: #206638;
   font-family: "Trebuchet MS";
   text-decoration: none;
   width: 100%;
 }
 
 .lista3 {
-  color: rgb(201, 97, 97);
+  color: #206638;
   font-family: "Trebuchet MS";
   text-decoration: none;
   width: 100%;
@@ -137,6 +138,10 @@ h3 {
   text-align: center;
   
 }
+ .mis{
+  height: 40%;
+  width: 80%;
+} 
 
 .nombre {
   font-size: 95px;
@@ -148,6 +153,13 @@ h3 {
   font-weight: lighter;
   margin-top: 30px;
 }
+
+.nombres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 .numero {
   font-size: 30px;
@@ -362,6 +374,7 @@ height: 100px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: normal;
   color: #464e4a;
+  margin: 10px;
 }
 
 @media screen and (min-width: 700px) {
@@ -381,4 +394,9 @@ height: 100px;
   .lugar {
     width: 15%;
   }
+  .mis{
+    height: 30%;
+    width: 60%;
+  }
+  
 }
