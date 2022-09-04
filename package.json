@@ -4,7 +4,8 @@
   "description": "Invitacio de los quince de vale",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node app.js"
   },
   "author": "damichingona",
   "license": "ISC",

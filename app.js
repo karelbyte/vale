@@ -2,14 +2,14 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const body_parser = require('body-parser');
-var mysql      = require('mysql');
+/* var mysql      = require('mysql');
 var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'dami',
   password : 'dami'
 });
 
-connection.connect();
+connection.connect(); */
 
 app.use(express.static("publics"));
 app.use(body_parser.urlencoded({extended:true}));
@@ -19,7 +19,7 @@ app.get("/", (request, response) => {
 });
 
 app.post("/confirmacion", (request, response) => {
-   connection.query(`insert into invitadosdb.personas (nombre, asistencia) values ("${request.body.nombre}", 1)`)
+  /*connection.query(`insert into invitadosdb.personas (nombre, asistencia) values ("${request.body.nombre}", 1)`) */
    response.redirect('/');
 });
 
